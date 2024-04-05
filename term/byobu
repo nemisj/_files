@@ -1,0 +1,10 @@
+mn_byobu_session() {
+	name="$(basename $(pwd))"
+	byobu has-session -t ${name} 
+	if [[ $? == "1" ]]; then
+		byobu new-session -s ${name} 
+	else
+		byobu attach-session -t ${name} 
+	fi
+
+}
