@@ -17,7 +17,17 @@ source ~/_files/tig/desert.theme
 source ~/_files/tig/bindings
 ```
 
-Copy .gitconfig to $HOME
+Make symlink to .gitconfig
 ```
-cp .gitconfig ~/.gitconfig
+cd ~
+ln -s _files/.gitconfig .gitconfig
 ```
+
+Patch powerlevel10
+
+```
+nvim ~/.p10k.zsh
+# move background_jobs to POWERLEVEL9K_LEFT_PROMPT_ELEMENTS from POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS
+sed -i -e 's/POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=true/POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=true/'
+```
+
