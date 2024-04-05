@@ -1,0 +1,11 @@
+[alias]
+	co=checkout
+	psuh=push
+	st=status
+	cm=commit
+	remaster = !git stash && git fetch && git rebase origin/master && git stash pop
+[user]
+	email = nemisj@nemisj.com
+	name = Maks Nemisj
+[core]
+	editor = nvim
