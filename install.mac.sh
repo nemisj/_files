@@ -5,19 +5,15 @@ xcode-select --install
 which brew
 
 # homebrew install: https://brew.sh
-if [[ $? === 1 ]]; then
+if [[ $? == 1 ]]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
   # add homebrew to the PATH
-  # …
+  export PATH=$PATH:/opt/homebrew/bin
 fi
-
 
 # nvim install
 brew install nvim
-
-# nvm install: https://github.com/nvm-sh/nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 # atool install
 brew install atool
@@ -39,3 +35,5 @@ brew install direnv
 
 git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo "source ~/powerlevel10/powerlevel10k.zsh-theme" >> ~/.zshrc
+
+bash <(curl -fsSL https://moonrepo.dev/install/proto.sh)
