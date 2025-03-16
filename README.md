@@ -3,7 +3,6 @@ Add things to .zshrc
 ```
 source ~/_files/term/mac_keyboard
 source ~/_files/term/byobu
-source ~/_files/term/nvim.zsh
 
 eval "$(direnv hook zsh)"
 
