@@ -30,3 +30,6 @@ nvim ~/.p10k.zsh
 sed -i -e 's/POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=true/POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=true/'
 ```
 
+Add vimfiles:
+
+https://github.com/nemisj/vimfiles?tab=readme-ov-file#installation
