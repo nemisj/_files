@@ -31,7 +31,7 @@ brew install tig
 brew install direnv
 
 # terminal theme
-# curl https://github.com/sindresorhus/terminal-snazzy/raw/main/Snazzy.terminal> ~/
+# curl https://raw.githubusercontent.com/sindresorhus/terminal-snazzy/main/Snazzy.terminal > ~/Snazzy.terminal
 
 git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo "source ~/powerlevel10/powerlevel10k.zsh-theme" >> ~/.zshrc
