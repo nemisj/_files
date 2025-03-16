@@ -34,6 +34,6 @@ brew install direnv
 # curl https://raw.githubusercontent.com/sindresorhus/terminal-snazzy/main/Snazzy.terminal > ~/Snazzy.terminal
 
 git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo "source ~/powerlevel10/powerlevel10k.zsh-theme" >> ~/.zshrc
+echo "source ~/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 
 bash <(curl -fsSL https://moonrepo.dev/install/proto.sh)
